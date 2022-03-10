@@ -5,7 +5,7 @@
   width: 250px;
   padding: 20px;
   margin: 5px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 img {
@@ -40,7 +40,7 @@ button:active {
 }
 
 .divContiner {
-  border: solid black 2px;
+  // border: solid black 2px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -64,14 +64,14 @@ button:active {
 }
 
 .buttonContiner {
-  border: solid pink 2px;
+  // border: solid pink 2px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .itemInformationContiner {
-  border: solid blueviolet 2px;
+  // border: solid blueviolet 2px;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@ button:active {
 }
 
 .imgContainer {
-  border: solid yellow 2px;
+  // border: solid yellow 2px;
   height: 325px;
   display: flex;
   flex-direction: row;
