@@ -1,0 +1,87 @@
+.movieItem {
+  border: solid rgb(168, 14, 130) 3px;
+  background-color: #ffeefa;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  margin: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+img {
+  width: 200px;
+}
+
+button {
+  margin: 20px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #af00af;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(255, 125, 255);
+}
+
+button:hover {
+  background-color: #fc65db;
+}
+
+button:active {
+  background-color: #920088;
+  box-shadow: 0 5px rgb(255, 0, 200);
+  transform: translateY(4px);
+}
+
+.divContiner {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flexContainer {
+  // border: solid red 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.itemContiner {
+  // border: solid green 2px;
+  height: 775px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+}
+
+.buttonContiner {
+  border: solid pink 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.itemInformationContiner {
+  border: solid blueviolet 2px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.imgContainer {
+  border: solid yellow 2px;
+  height: 325px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

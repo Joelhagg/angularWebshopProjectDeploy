@@ -1,0 +1,31 @@
+<h1>Här kan du se alla lagda ordrar!</h1>
+<h2 *ngIf="orders.length == 0"><em>Inga lagda ordrar tyvärr!!</em></h2>
+<hr>
+<br>
+<div>
+   <div *ngFor="let o of orders; let i = index" >
+       <br>
+        <p>
+            Beställningsid: {{ o.id }}
+        </p>
+        <p>
+            Beställningen lades: {{ o.created }}
+        </p>
+        <p>
+            Beställningen lades av: {{ o.createdBy }}
+        </p>
+        <p>
+            Betalningsmetod: {{ o.paymentMethod }}
+        </p>
+        <p>
+            Totala pris: {{ o.totalPrice }}
+        </p>
+        <p *ngFor="let row of o.orderRows">
+            {{o.orderRows | json }}
+        </p>
+        <br>
+        <button (click)="deleteOrder(o.id)">Delete order!</button>
+        <br>
+        <br>
+        <hr>
+</div>

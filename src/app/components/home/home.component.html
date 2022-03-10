@@ -1,0 +1,27 @@
+
+<div class="divContiner">
+    <div class="flexContainer">
+      <br>
+        <div class="itemContiner" *ngFor="let m of movie">
+            <div class="movieItem">
+                <div class="itemInformationContiner">
+                   <h2>{{ m.name }}</h2>
+                    <p> Pris: {{ m.price }} kr.</p>
+                    <p> {{ m.description }} </p> 
+                </div>
+                <div class="imgContainer">
+                    <img [src]="m.imageUrl">  
+                </div>
+                
+                
+                
+                <br>
+                <div class="buttonContiner">
+                   <button (click)="addToCartButton(m)">Köp</button> 
+                </div>
+                
+            </div>
+            <br>
+        </div>  
+    </div>
+</div>
