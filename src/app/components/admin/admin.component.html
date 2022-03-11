@@ -21,7 +21,7 @@
             Totala pris: {{ o.totalPrice }}
         </p>
         <p *ngFor="let row of o.orderRows">
-            {{o.orderRows | json }}
+            {{ row | json }}
         </p>
         <br>
         <button (click)="deleteOrder(o.id)">Delete order!</button>
