@@ -22,7 +22,7 @@
                         <p *ngIf="userForm.get('street')?.errors?.['minlength']">Din adress måste innehålla minst 5 bokstäver</p>
                     </div>  
                         
-                <input type="number" formControlName="houseNr" placeholder="Nummer">
+                <input type="number" min="0" formControlName="houseNr" placeholder="Nummer">
                     <div *ngIf="userForm.get('houseNr')?.invalid && userForm.get('houseNr')?.touched && userForm.get('houseNr')?.dirty">
                         <p *ngIf="userForm.get('houseNr')?.errors?.['required']">Detta fält är obligatoriskt.</p>
                     </div>  
@@ -35,10 +35,10 @@
             
             <div class="buttonsWraper">
                 <div class="buttonsContainer">
-                   <input class="radioBtn" type="radio" formControlName="payMethod" id="paypal" value="paypal">
+                   <input class="radioBtn" type="radio" formControlName="payMethod" id="paypal" value="PayPal">
                     <label for="paypal">Paypal</label>
 
-                    <input class="radioBtn" type="radio"formControlName="payMethod" id="invoice" value="invoice">
+                    <input class="radioBtn" type="radio"formControlName="payMethod" id="invoice" value="Faktura">
                     <label for="invoice">Faktura</label>
                       
                     <button  type="submit" [disabled]="!userForm.valid || products.length < 1">Slutför köp</button> 

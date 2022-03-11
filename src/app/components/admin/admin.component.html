@@ -4,7 +4,7 @@
 <br>
 <div>
    <div *ngFor="let o of orders; let i = index" >
-       <br>
+       <h2>Beställning: </h2>
         <p>
             Beställningsid: {{ o.id }}
         </p>
@@ -18,14 +18,25 @@
             Betalningsmetod: {{ o.paymentMethod }}
         </p>
         <p>
-            Totala pris: {{ o.totalPrice }}
+            Totala pris: {{ o.totalPrice }} kr
         </p>
+        <br>
+        <h3>Beställningens Varor</h3>
         <p *ngFor="let row of o.orderRows">
-            {{ row | json }}
+
+        Id: {{ row.id }}
+        <br>    
+        Productens Id: {{ row.productId }}
+        <br>
+        Antal produkter: {{ row.amount }} st
+        <br>
+           
         </p>
         <br>
         <button (click)="deleteOrder(o.id)">Delete order!</button>
         <br>
         <br>
+        <br>
         <hr>
+   </div>
 </div>

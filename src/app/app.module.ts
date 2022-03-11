@@ -10,7 +10,6 @@ import { AdminComponent } from './components/admin/admin.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-// import { AddToCartComponent } from './services/add-to-cart/add-to-cart.component';
 
 @NgModule({
   declarations: [
