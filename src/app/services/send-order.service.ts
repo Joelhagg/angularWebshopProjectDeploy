@@ -15,8 +15,6 @@ export class SendOrderService {
   makeOrder(order: Order) {
 
     this.ordersArray.push(order);
-
-    console.log('order from service', order);
     
     return this.http.post<Order>(environment.postToApiUrl, order).subscribe(data => {
       console.log(data);

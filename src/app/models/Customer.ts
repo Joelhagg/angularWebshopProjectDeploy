@@ -1,4 +1,3 @@
-import { PayMethod } from "./PayMethod";
 
 export class Customer {
     constructor(
