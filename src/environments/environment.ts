@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
+  production: true,
   getFromApiURL: 'https://medieinstitutet-wie-products.azurewebsites.net/api/products',
   postToApiUrl: 'https://medieinstitutet-wie-products.azurewebsites.net/api/orders',
   getOrdersToAdminUrl: 'https://medieinstitutet-wie-products.azurewebsites.net/api/orders?companyId=19',
